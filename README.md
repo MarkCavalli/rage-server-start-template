@@ -1,7 +1,14 @@
 # Rage Server Start Template
-This is RageMP start server template. It's using typescript for server-side and client-side and Vue.js for CEF.
+This is RageMP start server template. It's using typescript (server-side and client-side), Vue.js for CEF and including simple log in/sign up system.
 
-Include simple log in/sign up system.
+
+Thanks CocaColaBear for typescript types:
+
+Server-side: https://github.com/CocaColaBear/types-ragemp-s
+
+Client-side: https://github.com/CocaColaBear/types-ragemp-c
+
+
 
 ![Login screen](https://i.imgur.com/8TLX5O1.jpg)
 ![Loading screen](https://i.imgur.com/GuQMeYt.jpg)
