@@ -2,6 +2,7 @@ import * as crypto from 'crypto';
 import Misc from '../Options/sMisc';
 import Mailer from '../Options/sNodemailer';
 import Browser from '../Options/sBrowser';
+import Logger from '../Options/sLogger';
 
 
 export default class Auth {
@@ -11,7 +12,7 @@ export default class Auth {
 
     wrongCodeVerifyTry(player: PlayerMp, data: string) {
         const tries = JSON.parse(data).tries;
-        Misc.log.warn(`${player.socialClub} entered wrong auth code. Total tries: ${tries}`);
+        Logger.warn(`${player.socialClub} entered wrong auth code. Total tries: ${tries}`);
     }
 
     sendAndGetCode(player: PlayerMp, email: string) {
@@ -19,7 +20,7 @@ export default class Auth {
         const message = this.getVerificationCodeMessage(email, code);
         Mailer.sendMail(message);
         Browser.showNotification(player, `Check your mailbox!`, `green`, 5, `Success`);
-        Misc.log.debug(`${player.name} [${player.socialClub}] sended code to ${email}`);
+        Logger.debug(`${player.name} [${player.socialClub}] sended code to ${email}`);
         return code;
     }
 
