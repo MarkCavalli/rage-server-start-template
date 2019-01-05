@@ -1,0 +1,38 @@
+.notification {
+    display: flex; 
+    align-items: center; 
+    border-radius: 3px;
+    margin-top: 1vw;
+    opacity: 0.9;
+    cursor: pointer;
+
+    &__img {
+        width: 3vw; 
+        height: 3vw; 
+        margin-left: 0.75em;
+        -webkit-mask-size: cover;
+
+        &_white, &_yellow {
+            background-color: #24282a;
+        }
+    
+        &_grey, &_green, &_orange, &_red  {
+            background-color: #eee;
+        }
+    }
+
+    &__text-container {
+        margin: 0 0.75em; 
+        text-align: left;
+    }
+
+    &__title {
+        font-weight: 400; 
+        font-size: 0.9em;
+    }
+
+    &__text {
+        font-size: 0.75em;  
+        padding-top: 0.25em;
+    }
+}

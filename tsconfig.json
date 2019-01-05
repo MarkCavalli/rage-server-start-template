@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "lib": ["es2018", "dom"],
+        "sourceMap": false
+    },
+    "files": [
+        "./app/server/index.ts",
+        "./app/client/index.ts",
+    ]
+}

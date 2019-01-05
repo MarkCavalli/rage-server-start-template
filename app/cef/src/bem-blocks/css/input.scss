@@ -1,0 +1,54 @@
+.input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    text-align: center;
+    outline: none;
+    font-size: 1.25vw;
+
+    &_transparent-with-bottom-border {
+        color: #eee;
+        border-bottom: 1px solid #eee;
+        padding: 0.5vw 0;
+        margin: 0.5vw 0;
+
+        &::-webkit-input-placeholder {
+            color: #eee;
+        }
+    }
+
+
+}
+
+
+
+.input_gas-station {
+    width: 6.5vh; 
+    color: orange; 
+    font-size: 2.5vh; 
+    text-align: right; 
+}
+
+
+.input_range {
+    -webkit-appearance: none;
+    width: 90%;
+}
+ 
+.input_range::-webkit-slider-runnable-track {
+    background: #eee;
+    height: 0.5vw;
+    margin: 1vw 0;
+}
+ 
+.input_range::-webkit-slider-thumb {
+    border-radius: 50%;
+    width: 2.5vw;
+    height: 2.5vw;
+    transform: translateY(-1vw);
+    -webkit-appearance: none;
+}
+
+.input_range_theme-orange::-webkit-slider-thumb  {
+    background-color: orange;
+}

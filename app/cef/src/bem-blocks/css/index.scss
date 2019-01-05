@@ -1,0 +1,17 @@
+@import url('./reset.scss');
+@import url('./theme.scss');
+@import url('./particles.scss');
+@import url('./link-button.scss');
+@import url('./notification.scss');
+@import url('./transition.scss');
+@import url('./input.scss');
+
+
+.full {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+}

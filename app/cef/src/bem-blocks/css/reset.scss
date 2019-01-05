@@ -1,0 +1,30 @@
+html {
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, San Francisco, HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Segoe UI, Fira Sans, Roboto, Oxygen, Ubuntu, Droid Sans, Arial, sans-serif;
+    color: #eee;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.hover:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+}
+
+b {
+    font-weight: inherit;
+    display: block;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

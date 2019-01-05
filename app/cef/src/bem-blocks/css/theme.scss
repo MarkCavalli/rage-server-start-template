@@ -1,0 +1,32 @@
+.theme {
+
+    &_white {
+        color: #24282a;
+        background-color: #eee;
+    }
+
+    &_grey {
+        color: #eee;
+        background-color: #666;
+    }
+
+    &_green {
+        color: #eee;
+        background-color: #4AC144;
+    }
+
+    &_orange {
+        color: #eee;
+        background-color: orange;
+    }
+
+    &_yellow {
+        color: #24282a;
+        background-color: rgb(233, 217, 0);
+    }
+
+    &_red {
+        color: #eee;
+        background-color: tomato;
+    }
+}
