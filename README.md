@@ -1,4 +1,8 @@
 # rage-server-start-template
+This is RageMP start server template. It's using typescript for server-side and client-side and Vue.js for CEF.
+
+Include simple log in/sign up system.
+
 
 # Installation:
 1. Install Ragemp server.
@@ -9,3 +13,12 @@
 6. Run `npm i` by cmd inside `app/server/cef` directory.
 7. Run `npm run build` by cmd inside `server-files` directory with `server.exe`.
 8. Now you can join into your server!
+
+
+# Commands:
+
+`npm run build` - Create a full production build.
+
+`npm run watch-server` - Create a server development build and start hot reloading for `app/server` and `app/client`
+
+`npm run watch-cef` - Create a CEF development build and start hot reloading for `client_packages/cef`
