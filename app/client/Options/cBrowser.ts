@@ -1,10 +1,8 @@
 class BrowserSingletone {
-	pathToBrowser: string;
 	browser: any;
 
 	constructor() {
-		this.pathToBrowser = 'package://cef/index.html#';
-		this.browser = mp.browsers.new(this.pathToBrowser);
+		this.browser = mp.browsers.new('package://cef/index.html#');
 		
 
 		mp.events.add({
@@ -19,14 +17,13 @@ class BrowserSingletone {
 	}
 
 	setUrl(url: string, enableCursor: boolean) {
-		const path = `${this.pathToBrowser}${url}`;
-		this.browser.url = path;
+		const path = `app.$router.push('${url}');`;
 		this.setInteractState(enableCursor);
+		this.pasteJS(path);
 	}
 
 	pasteJS(data: string) {
 		this.browser.execute(data);
-		this.browser.url = this.browser.url; // FIX! app.showLoading() dont work, if you are not in browser, or before not update browser path...
 	}
 
 	setInteractState(state: boolean) {
