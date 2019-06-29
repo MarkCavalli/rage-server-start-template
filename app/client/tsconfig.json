@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "lib": ["es2018", "dom"],
+        "sourceMap": false
+    },
+    "include": [
+        "**/*"
+    ]
+}

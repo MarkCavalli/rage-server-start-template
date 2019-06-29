@@ -8,16 +8,16 @@
     "build": "vue-cli-service build --dest ../../client_packages/cef"
   },
   "dependencies": {
-    "node-sass": "^4.11.0",
-    "register-service-worker": "^1.5.2",
+    "node-sass": "^4.12.0",
+    "register-service-worker": "^1.6.2",
     "sass-loader": "^7.1.0",
     "vue": "^2.5.17",
-    "vue-router": "^3.0.1",
-    "vuex": "^3.0.1"
+    "vue-router": "^3.0.6",
+    "vuex": "^3.1.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-pwa": "^3.2.0",
-    "@vue/cli-service": "^3.2.0",
+    "@vue/cli-plugin-pwa": "^3.8.0",
+    "@vue/cli-service": "^3.8.4",
     "vue-template-compiler": "^2.5.17"
   }
 }

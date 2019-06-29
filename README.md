@@ -18,18 +18,8 @@ Client-side: https://github.com/CocaColaBear/types-ragemp-c
 # Installation:
 1. Install Ragemp server.
 2. Put all files in server-files directory.
-3. Run `npm i` by cmd inside `server-files` directory with `server.exe`.
+3. Run `npm i` by cmd inside `server-files`, `server-files/app/server`, `server-files/app/client`, `server-files/app/cef`.
 4. Server using MySQL as a database. So you have to import sql structure file in to your database. Import sql structure file `structure.sql` into it.      
 5. Modify your account data inside `app/server/Options/` in files `sDB.ts` and `sNodemailer.ts`
-6. Run `npm i` by cmd inside `app/server/cef` directory.
-7. Run `npm run build` by cmd inside `server-files` directory with `server.exe`.
-8. Now you can join into your server!
-
-
-# Commands:
-
-`npm run build` - Create a full production build.
-
-`npm run watch-server` - Create a server development build and start hot reloading for `app/server` and `app/client`
-
-`npm run watch-cef` - Create a CEF development build and start hot reloading for `client_packages/cef`
+6. Run `build-server.bat` file inside `server-files` directory with `server.exe`.
+7. Now you can modify src code in `app` and test your server!

@@ -2,13 +2,14 @@
     "compilerOptions": {
         "module": "commonjs",
         "noImplicitAny": true,
+        "noImplicitUseStrict": true,
+        "suppressImplicitAnyIndexErrors": true,
         "removeComments": true,
         "preserveConstEnums": true,
-        "lib": ["es2018", "dom"],
+        "lib": ["esnext", "dom"],
         "sourceMap": false
     },
-    "files": [
-        "./app/server/index.ts",
-        "./app/client/index.ts",
+    "include": [
+        "**/*"
     ]
 }

@@ -4,27 +4,15 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@types/mysql": "^2.15.5",
-    "@types/node": "^10.12.18",
-    "@types/nodemailer": "^4.6.5",
-    "@types/ragemp-c": "github:CocaColaBear/types-ragemp-c#master",
-    "@types/ragemp-s": "github:CocaColaBear/types-ragemp-s#master",
-    "mysql": "^2.16.0",
-    "nodemailer": "^4.7.0",
-    "winston": "^3.1.0"
-  },
-  "devDependencies": {
-    "ts-loader": "^5.3.2",
-    "typescript": "^3.2.2",
-    "webpack": "^4.28.3",
-    "webpack-cli": "^3.2.0",
-    "webpack-node-externals": "^1.7.2"
+    "@types/mysql": "^2.15.6",
+    "@types/node": "^12.0.10",
+    "@types/nodemailer": "^6.2.0",
+    "mysql": "^2.17.1",
+    "nodemailer": "^6.2.1",
+    "winston": "^3.2.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode=production && cd ./app/cef && npm run build",
-    "watch-server": "webpack --mode=development --watch",
-    "watch-cef": "cd ./app/cef && npm run watch"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

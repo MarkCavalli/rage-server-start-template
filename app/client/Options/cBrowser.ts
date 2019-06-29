@@ -1,5 +1,5 @@
 class BrowserSingletone {
-	browser: any;
+	browser: BrowserMp;
 
 	constructor() {
 		this.browser = mp.browsers.new('package://cef/index.html#');
